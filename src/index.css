@@ -11,3 +11,122 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.slick-arrow.slick-prev,
+ .slick-arrow.slick-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 50%;
+  color: #E7717D;
+  font-size: 20px;
+  display: none;
+}
+
+.slick-next:hover, .slick-prev:hover{
+  color: rgb(96, 18, 18) !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+
+.slick-next, .slick-prev{
+  right: 2px !important;
+  width: 30px !important;
+  height: 30px !important;
+  background-color: white !important;
+  border-radius: 50% !important;
+  padding: 5px !important;
+  display: none !important;
+}
+
+.slick-prev{
+  left:2px !important;
+  display: none !important;
+}
+
+.slick-slider {
+  /* padding: 25px !important; */
+  border-radius: 50px !important;
+  min-width: auto;
+}
+
+.slick-dots li {
+  width: 20px;
+  height: 0px;
+  margin: 10px -10px;
+  transition: width 0.3s ease-in-out;
+  color: #E7717D !important;
+  display: none;
+}
+.slick-dots{
+  position:relative !important;
+  display: none !important;
+}
+.slick-dots .slick-active .ft-slick__dots--custom {
+  width: 20px;
+  top: 0px;
+  overflow: hidden;
+  background: #994d47;
+  margin-top: 26px;
+}
+
+/* .slick-dots{
+  width: 90% !important;
+} */
+
+.slick-dots li.slick-active button:before {
+  color:#E7717D !important;
+}
+
+.element {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.slick-track{
+  /* width: 100% !important; */
+}
+
+
+.swiperWhy {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
